@@ -6,7 +6,7 @@
     font-family: 'Poppins', sans-serif;
 }
 /************************************Navigation Bar*****************************************/
-header{
+ header{
   background-color: #2D25A0;
   padding: 20px;
 }
@@ -71,27 +71,24 @@ a{
 /* **************************************player************************************** */
 
  .players{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  width: 1050px;
+  padding-left: 105px;
+  padding-top: 30px;
   
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     grid-row-gap: 30px;
-     
-  
-    
  }
+
  .player{
-  
-  /* background: #FFFFFF;
-  box-shadow: 0px 0px 40px;
-   margin: 30px;
-  padding: 15px 15px 15px 15px;  */
   background: #FFFFFF;
-  box-shadow: 0px 0px 40px;
+   box-shadow: 0px 0px 40px;
   margin: 15px 15px 15px 15px;
-  padding: 28px 35px 30px 30px;
+  padding: 28px 35px 30px 30px; 
+ 
  }
  .player  img{
-   width: 400px;
+   width: 330px;
    height: 474px;
  }
 
@@ -104,7 +101,6 @@ a{
      padding: 69px;
      justify-content: space-around;
     
-  
  }
  
  .highlights-section img{
@@ -112,9 +108,7 @@ a{
     height: 427px;
    
  }
- /* .highlights-section div .button{
-   color: red;
- } */
+
  .highlights-match{
    width: 466px;
    height: 309px;
@@ -129,7 +123,7 @@ a{
    width: 567px;
    height: 427px;
  }
- a{
+ /* a{
     /* padding: 0px 0px;
     justify-content: space-between;
     margin: 0px 0px;
@@ -138,18 +132,30 @@ a{
     flex-direction: row;
     align-items: center; */
     
- } 
+   */
   /*****************************************Footer*************************************************/
+  footer img{
+    width: 483.87px;
+    height: 213px;
+    justify-content: center;
+  }
+  
   footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  footer img{
-    width: 483.87px;
-    height: 213px;
-  }
+    
+  } 
+  
+ 
+  
+
+   
+  
+
+
+  
    /****************************************************Mobile devices*********************************/
    @media only screen and (max-width:688px) {
      .banner-image{
